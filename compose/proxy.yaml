@@ -24,9 +24,13 @@ services:
       traefik.frontend.rule: 'Host: monitor.wb.local'
       traefik.port: 8080
 
-  ambassador:
+  gateway:
     image: quay.io/datawire/ambassador:0.38.0
     ports:
       - 8080:80
     volumes:
-      - ../config/ambassador:/ambassador/ambassador-config:ro
+      - ../config/gateway:/ambassador/ambassador-config:ro
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: 'Host: wb.local'
+      traefik.port: 8080
