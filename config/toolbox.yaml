@@ -1,9 +1,9 @@
 # For other configuration options, see https://github.com/rubykube/toolbox/blob/master/bin/stress_trading
 
-root-url: http://api.wb.local
+root-url: http://account.remidax.com
 
-currencies: usd,eur
-markets: eurusd
+currencies: btc,eth
+markets: btceth
 
 orders:  100
 traders: 10
