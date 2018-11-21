@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - api.wb.local
-          - auth.wb.local
-          - ws.ranger.wb.local
-          - pma.wb.local
-          - eth.wb.local
-          - monitor.wb.local
+          - account.remidax.com
+          - auth.remidax.com
+          - ws.ranger.remidax.com
+          - pma.remidax.com
+          - eth.remidax.com
+          - monitor.remidax.com
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.local'
+      traefik.frontend.rule: 'Host: monitor.remidax.com'
       traefik.port: 8080
